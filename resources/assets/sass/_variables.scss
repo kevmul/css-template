@@ -1,0 +1,79 @@
+/*=========================================================
+  Settings
+ ========================================================*/
+
+// Globals
+$global-radius: 4px;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Body
+$body-background: #f5f8fa;
+
+// Container
+$container-max-width: 1190px;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+/*=========================================================
+  Buttons
+ ========================================================*/
+
+$danger: $red;
+$success: $green;
+$warning: $yellow;
+$info: $blue;
+
+// Buttons
+$button-color		: $dark-gray;
+$button-background	: $gray;
+
+// Button Map
+$buttonMap: ( 
+	Error: ($danger, #fff), 
+	Success: ($success, #fff), 
+	Warning: ($warning, black), 
+	Info: ($info, white)
+);
+
+/*=========================================================
+  Typography 
+ ========================================================*/
+
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-serif: "", serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: $gray;
+
+/*=========================================================
+  Form 
+ ========================================================*/
+
+// Form group
+$form-group-padding: 5px 0;
+$form-group-flow: column wrap;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+$input-padding: 10px 15px;
+$input-height: 40px;
+
+/*=========================================================
+  Misc 
+ ========================================================*/
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// Helper
+$spaceAmounts: (5,10,15,20,25,30,35,40,45,50,75,100);
+$sides: ('top','right','bottom','left');

@@ -1,0 +1,43 @@
+$mobile     : 400px
+$phablet    : 550px
+$tablet     : 750px
+$desktop    : 1000px
+$desktopHD  : 1200px
+
+
+@mixin mobile 
+  @media only screen and (min-width: #{$mobile}) 
+    @content
+
+@mixin mobile-only 
+  @media only screen and (min-width: #{$mobile}) and (max-width: #{$phablet -1}) 
+    @content
+
+@mixin phablet 
+  @media only screen and (min-width: #{$phablet}) 
+    @content
+
+@mixin phablet-only 
+  @media only screen and (min-width: #{$phablet}) and (max-width: #{$tablet -1}) 
+    @content
+
+@mixin tablet 
+  @media only screen and (min-width: #{$tablet}) 
+    @content
+
+@mixin tablet-only 
+  @media only screen and (min-width: #{$tablet}) and (max-width: #{$desktop -1}) 
+    @content
+
+@mixin desktop 
+  @media only screen and (min-width: #{$desktop}) 
+    @content
+
+@mixin desktop-only 
+  @media only screen and (min-width: #{$desktop}) and (max-width: #{$desktopHD -1}) 
+    @content
+  
+@mixin desktopHD 
+  @media only screen and (min-width: #{$desktopHD}) 
+    @content
+  
