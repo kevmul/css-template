@@ -1,0 +1,36 @@
+.Grid
+	display: flex
+	flex-flow: row wrap
+	margin-left: -0.75rem
+	margin-top: -0.75rem
+	margin-right: -0.75rem
+
+
+.Column-is-spaced
+	.Column 
+		margin: 0 .75rem
+
+.Row
+
+.Column
+	flex: 1
+	&.is-one-third
+		flex: none
+		width: 33%
+	&.is-two-thirds
+		flex: none
+		width: 55%
+	&.is-three-quarters
+		flex: none
+		width: 75%
+	&.is-half
+		flex: none
+		width: 50%
+	&.is-one-quarter 
+		flex: none
+		width: 25%
+
+	$base : (100 / $grid-columns)
+	@for $i from 1 through $grid-columns
+		&--#{$i}
+			flex: 1 1 ($base * $i)+%

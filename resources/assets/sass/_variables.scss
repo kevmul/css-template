@@ -1,16 +1,18 @@
-/*=========================================================
-  Settings
- ========================================================*/
+// =========================================================
+// Settings
+// ========================================================x
 
 // Globals
 $global-radius: 4px;
 
 // Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
+$brand-primary: $turquoise;
+$brand-secondary: $yankee-blue;
+$brand-tertiary: $plum;
+$brand-info: $blue;
+$brand-success: $green;
+$brand-warning: $yellow;
+$brand-danger: $red;
 
 // Body
 $body-background: #f5f8fa;
@@ -21,14 +23,30 @@ $container-max-width: 1190px;
 // Navbar
 $navbar-default-bg: #fff;
 
-/*=========================================================
-  Buttons
- ========================================================*/
+// =========================================================
+// Alert
+// ========================================================
 
-$danger: $red;
-$success: $green;
-$warning: $yellow;
-$info: $blue;
+$alertMap: (
+	Primary : ($brand-primary, #fff),
+	Secondary : ($brand-secondary, #fff),
+	Tertiary : ($brand-tertiary, #fff),
+	Error 	: ($brand-danger, #fff), 
+	Success : ($brand-success, #fff), 
+	Warning : ($brand-warning, black), 
+	Info   	: ($brand-info, #fff)
+);
+
+// =========================================================
+// Grid
+// ========================================================
+
+$grid-columns: 12;
+
+
+// =========================================================
+// Buttons
+// ========================================================
 
 // Buttons
 $button-color		: $dark-gray;
@@ -36,25 +54,34 @@ $button-background	: $gray;
 
 // Button Map
 $buttonMap: ( 
-	Error: ($danger, #fff), 
-	Success: ($success, #fff), 
-	Warning: ($warning, black), 
-	Info: ($info, white)
+	Error 	: ($brand-danger, #fff), 
+	Success : ($brand-success, #fff), 
+	Warning : ($brand-warning, #000), 
+	Info 	: ($brand-info, #fff)
 );
 
-/*=========================================================
-  Typography 
- ========================================================*/
+//=========================================================
+// Typography 
+// ========================================================
 
+$heading-scale: 8; // amount of px headings grow from h6 to h1
 $font-family-sans-serif: "Raleway", sans-serif;
 $font-family-serif: "", serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
-$text-color: $gray;
+$text-color: $rich-black;
 
-/*=========================================================
-  Form 
- ========================================================*/
+// =========================================================
+// Card
+// ========================================================x
+
+$card-background: white;
+$card-border-bottom: 2px solid $brand-primary;
+
+
+// =========================================================
+// Form 
+// ========================================================x
 
 // Form group
 $form-group-padding: 5px 0;
@@ -67,9 +94,9 @@ $input-color-placeholder: lighten($text-color, 30%);
 $input-padding: 10px 15px;
 $input-height: 40px;
 
-/*=========================================================
-  Misc 
- ========================================================*/
+// =========================================================
+// Misc 
+// ========================================================x
 
 // Panels
 $panel-default-heading-bg: #fff;
