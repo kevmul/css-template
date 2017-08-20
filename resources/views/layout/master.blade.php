@@ -7,7 +7,11 @@
 </head>
 <body>
 
-@yield('content')
+<nav>@include('layout.nav')</nav>
+
+<div class="Wrapper">
+	@yield('content')
+</div>
 
 </body>
 </html>

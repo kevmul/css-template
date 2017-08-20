@@ -5,7 +5,7 @@
 	text-shadow: 0px 1px 8px rgba(0,0,0,0.4)
 
 .is-circle
-	+border-radius(50%)
+	+border-radius(50%) 
 
 .is-active
 	display: flex
@@ -21,11 +21,14 @@
 	background-color: $brand-info
 
 .is-warning
-	background-color: $brand-warning
+	background-color: $brand-warning 
 
 .is-rounded
 	+border-radius($global-radius)
 
+.has-shadow
+	border-bottom: 1px solid rgba(0,0,0,0.2)
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2)
 
 @each $space in $spaceAmounts
 	@each $side in $sides

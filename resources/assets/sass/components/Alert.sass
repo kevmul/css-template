@@ -1,6 +1,8 @@
-.Alert
-	background-color: white 
-
+.Alert 
+	position: relative
+	background-color: white
+	+border-radius($global-radius)
+	
 	@each $name, $colors in $alertMap 
 		$bgcolor: nth($colors, 1)
 		$fontcolor: nth($colors, 2)
@@ -10,3 +12,25 @@
 			color: $fontcolor
 			*
 				color: $fontcolor !important
+
+.Alert__content
+	padding: 20px 25px
+
+.Alert__title
+	font-size: 1.6rem
+	margin-bottom: 12px
+
+.Alert__body
+
+.Alert__close
+	position: absolute
+	top: 6px
+	right: 6px
+	width: $alert-close-size
+	height: $alert-close-size
+	display: flex
+	justify-content: center
+	align-content: center
+	background-color: rgba(0,0,0,0.1)
+	+border-radius(50%)
+	cursor: pointer

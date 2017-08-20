@@ -1,0 +1,53 @@
+.Navigation
+	position: relative
+	background-color: $nav-background-color
+	color: $nav-text-color
+	a 
+		color: $nav-text-color
+
+.Nav--Floating_Links
+	height: $nav-bar-height
+	> .Container
+		display: flex
+		height: 100%
+		align-items: center
+
+.Nav__list
+	display: flex
+	position: relative
+
+	&--Dropdown
+		min-width: 100%
+		height: 1px 
+		opacity: 0
+		overflow: hidden
+		position: absolute
+		top: 100%
+		right: 0
+		background-color: $nav-background-color
+		z-index: 11
+		flex-direction: column
+		z-index: 2
+		transition: opacity .2s ease
+
+.Nav__item
+	display: flex
+	flex: 1
+	position: relative
+	a 
+		padding: 8px 12px
+		flex: 1
+		white-space: nowrap
+		transition: background-color .3s ease
+		&:hover 
+			background-color: darken($nav-background-color, 20%)
+	&:hover
+		.Nav__list--Dropdown
+			height: auto
+			opacity: 1
+
+.Nav__item--Seperator
+	display: block
+	height: 3px
+	flex: 1
+	background-color: darken($nav-background-color, 5%)
