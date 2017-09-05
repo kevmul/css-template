@@ -36,3 +36,20 @@
 			margin-#{$side}: #{$space}px
 		.p-#{str-slice($side, 0, 1)}-#{$space}
 			padding-#{$side}: #{$space}px
+
+@each $name, $size in $breakPoints
+  .is-visible-#{$name}
+    +breakpoint(nth($size, 1))
+      display: flex
+  
+  .is-hidden-#{$name}
+    +breakpoint(0, (nth($size, 2)-1))
+      display: none
+  
+  .is-visible-#{$name}-only
+    +breakpoint(nth($size,1), nth($size, 2)-1)
+      display: flex
+      
+  .is-hidden-#{$name}-only
+    +breakpoint(nth($size,1), (nth($size, 2)-1))
+      display: hidden

@@ -246,3 +246,11 @@
 =noSelect()
   -webkit-touch-callout: none
   +css3-prefix("user-select", "none")
+
+=breakpoint($from, $to:null)
+  @if $to == null 
+    @media only screen and (min-width: $from)
+      @content
+  @else 
+    @media only screen and (min-width: $from) and (max-width: $to)
+      @content

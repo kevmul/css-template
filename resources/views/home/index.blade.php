@@ -6,7 +6,7 @@
 		<div class="Hero__body">
 			<h1>Kevin's Code Template</h1>
 			<h3>Hero</h3>
-			<div class="Alert Background--Info m-t-30">
+			<div class="Alert Background--Tertiary m-t-30">
 				<div class="Alert__content">
 					<div class="Alert__title">
 						We are going to create something GREAT
@@ -24,13 +24,19 @@
 		@include('home.partials.typography')
 	</div>
 </section>
-
+<hr>
 <section class="Section">
 	<div class="Container">
 		@include('home.partials.colors')
 	</div>
 </section>
-
+<hr>
+<section class="Section">
+	<div class="Container">
+		@include('home.partials.cards')
+	</div>
+</section>
+<hr>
 <section class="Section">
 	<div class="Container">
 		@include('home.partials.alerts')
