@@ -2,17 +2,33 @@
 // Settings
 // ========================================================x
 
-// Globals
-$global-radius: 4px;
+// Breakpoints
+$tablet           	: 600px;
+$tablet-portrait  	: 990px;
+$desktop          	: 1300px;
+$desktopHD        	: 1800px;
+
+$breakPoints: (
+	mobile: 0 $tablet, 
+	tablet: $tablet $tablet-portrait, 
+	tablet-portrait: $tablet-portrait $desktop, 
+	desktop: $desktop $desktopHD, 
+	desktopHD: $desktopHD 99999px
+);
 
 // Brands
 $brand-primary: $turquoise;
+$brand-primary-dark: shade($brand-primary, 25%);
+$brand-primary-light: tint($brand-primary, 25%);
 $brand-secondary: $yankee-blue;
-$brand-tertiary: $plum;
+$brand-tertiary: complement($brand-primary);
 $brand-info: $blue;
 $brand-success: $green;
 $brand-warning: $yellow;
 $brand-danger: $red;
+
+// Globals
+$global-radius		: 4px;
 
 // Body
 $body-background: #f5f8fa;
@@ -26,12 +42,17 @@ $container-max-width: 1190px;
 
 $alertMap: (
 	Primary : ($brand-primary, #fff),
+	Primary_Dark : ($brand-primary-dark, #fff),
+	Primary_Light : ($brand-primary-light, #fff),
 	Secondary : ($brand-secondary, #fff),
 	Tertiary : ($brand-tertiary, #fff),
 	Error 	: ($brand-danger, #fff), 
 	Success : ($brand-success, #fff), 
 	Warning : ($brand-warning, black), 
-	Info   	: ($brand-info, #fff)
+	Info   	: ($brand-info, #fff),
+	Dark_Gray:($dark-gray, #fff),
+	Gray 	: ($gray, #fff),
+	Light_Gray:($light-gray, #fff),
 );
 $alert-close-size: 20px;
 
@@ -39,16 +60,16 @@ $alert-close-size: 20px;
 // Navigation
 // ========================================================
 $nav-bar-height: 60px;
-$nav-background-color: $brand-tertiary;
-$nav-text-color: $brand-primary;
-
+$nav-background-color: $brand-primary-dark;
+$nav-background-color-hover: $brand-primary-dark;
+$nav-text-color: white;
+$nav-seperator-color: $brand-primary;
 
 // =========================================================
 // Grid
 // ========================================================
 
 $grid-columns: 12;
-
 
 // =========================================================
 // Buttons
@@ -76,6 +97,10 @@ $font-family-serif: "", serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
 $text-color: $rich-black;
+
+// Block Quote
+$blockquote-background: $light-gray;
+$blockquote-color: $dark-gray;
 
 // =========================================================
 // Card
