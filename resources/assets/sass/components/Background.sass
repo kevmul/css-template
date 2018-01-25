@@ -1,10 +1,10 @@
 .Background
-	@each $name, $colors in $alertMap 
-		$bgcolor: nth($colors, 1)
-		$fontcolor: nth($colors, 2)
+    @each $name, $colors in $alertMap
+        $bgcolor: nth($colors, 1)
+        $fontcolor: nth($colors, 2)
 
-		&--#{$name} 
-			background-color: $bgcolor 
-			color: $fontcolor
-			*
-				color: $fontcolor !important
+        &--#{$name}
+            background-color: $bgcolor
+            color: $fontcolor
+            *
+                color: $fontcolor !important

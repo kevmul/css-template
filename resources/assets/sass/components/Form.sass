@@ -1,58 +1,58 @@
 $form_switch--Height: 20px
 $form_switch--Width: 60px
 .Form
-	display: flex
+    display: flex
 
 .Form__group
-	display: flex
-	flex-flow: $form-group-flow
-	padding: $form-group-padding
+    display: flex
+    flex-flow: $form-group-flow
+    padding: $form-group-padding
 
-	input[type=text],
-	input[type=email],
-	input[type=password],
-	select
-		border: $input-border
-		padding: $input-padding
-		height: $input-height
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    select
+        border: $input-border
+        padding: $input-padding
+        height: $input-height
 
-		+border-radius($global-radius)
-		&:focus
-			outline: $input-border-focus
+        +border-radius($global-radius)
+        &:focus
+            outline: $input-border-focus
 
 
 
 .Form__switch
-	position: relative
-	display: inline-block
-	width: $form_switch--Width
-	height: $form_switch--Height
-	input 
-		display: block
-		&:checked + .Form__slider
-			background-color: $turquoise
-		&:focus + .Form__slider
-			box-shadow: 0 0 1px #2196F3
-		&:checked + .Form__slider:before
-			transform: translateX($form_switch--Width - $form_switch--Height )
+    position: relative
+    display: inline-block
+    width: $form_switch--Width
+    height: $form_switch--Height
+    input
+        display: block
+        &:checked + .Form__slider
+            background-color: $turquoise
+        &:focus + .Form__slider
+            box-shadow: 0 0 1px #2196F3
+        &:checked + .Form__slider:before
+            transform: translateX($form_switch--Width - $form_switch--Height )
 
 .Form__slider
-	position: absolute
-	cursor: pointer
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	background-color: #ccc
-	+transition(.4s)
-	+border-radius(4px)
-	&:before
-		position: absolute
-		content: ""
-		height: $form_switch--Height - 8
-		width: $form_switch--Height - 8
-		left: 4px
-		bottom: 4px
-		background-color: white
-		transition: .4s
-		+border-radius(2px)
+    position: absolute
+    cursor: pointer
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #ccc
+    +transition(.4s)
+    +border-radius(4px)
+    &:before
+        position: absolute
+        content: ""
+        height: $form_switch--Height - 8
+        width: $form_switch--Height - 8
+        left: 4px
+        bottom: 4px
+        background-color: white
+        transition: .4s
+        +border-radius(2px)

@@ -1,22 +1,22 @@
 *
-	color: $text-color
-	font-family: 'Muli', sans-serif
+    color: $text-color
+    font-family: 'Muli', sans-serif
 
-	
-@for $i from 1 through 6 
-  h#{$i} 
-    font-size: $font-size-base + $heading-scale * (6 - $i)
+
+@for $i from 1 through 6
+    h#{$i}
+        font-size: $font-size-base + $heading-scale * (6 - $i)
 
 .Blockquote
-	position: relative
-	font-family: 'Indie Flower', cursive
-	color: $blockquote-color
-	padding: 20px
-	font-size: 1.4em
-	background: $blockquote-background
-	&::before,
-	&::after
-		content: "\""
-	&:before
-		position: absolute
-		left: 10px
+    position: relative
+    font-family: 'Indie Flower', cursive
+    color: $blockquote-color
+    padding: 20px
+    font-size: 1.4em
+    background: $blockquote-background
+    &::before,
+    &::after
+        content: "\""
+    &:before
+        position: absolute
+        left: 10px
