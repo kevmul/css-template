@@ -17,11 +17,11 @@ $breakPoints: (
 );
 
 // Brands
-$brand-primary: $turquoise;
+$brand-primary: $orange;
 $brand-primary-dark: shade($brand-primary, 25%);
 $brand-primary-light: tint($brand-primary, 25%);
-$brand-secondary: $yankee-blue;
-$brand-tertiary: complement($brand-primary);
+$brand-secondary: $purple;
+$brand-tertiary: $dark-purple;
 $brand-info: $blue;
 $brand-success: $green;
 $brand-warning: $yellow;
@@ -31,7 +31,7 @@ $brand-danger: $red;
 $global-radius		: 4px;
 
 // Body
-$body-background: #f5f8fa;
+$body-background: $white;
 
 // Container
 $container-max-width: 1190px;
@@ -56,12 +56,17 @@ $alertMap: (
 );
 $alert-close-size: 20px;
 
+//|--------------------------------------------------------
+//| Hero
+//|--------------------------------------------------------
+$hero-background: $dark-gray;
+
 // =========================================================
 // Navigation
 // ========================================================
 $nav-bar-height: 60px;
 $nav-background-color: $brand-primary-dark;
-$nav-background-color-hover: $brand-primary-dark;
+$nav-background-color-hover: $brand-primary;
 $nav-text-color: white;
 $nav-seperator-color: $brand-primary;
 
@@ -94,9 +99,9 @@ $buttonMap: (
 $heading-scale: 8; // amount of px headings grow from h6 to h1
 $font-family-sans-serif: "Raleway", sans-serif;
 $font-family-serif: "", serif;
-$font-size-base: 14px;
+$font-size-base: 16px;
 $line-height-base: 1.6;
-$text-color: $rich-black;
+$text-color: $dark-gray;
 
 // Block Quote
 $blockquote-background: $light-gray;

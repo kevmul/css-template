@@ -3,7 +3,7 @@
 		<h1 class="Content__title">Cards</h1>
 	</div>
 	<div class="Grid Column-is-spaced">
-		<div class="Card">
+		<div class="Card Column is-4-wide">
 			<div class="Hero">
 				<img src="/img/face.png" alt="">
 			</div>

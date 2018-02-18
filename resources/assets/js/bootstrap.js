@@ -1,5 +1,16 @@
+import Vue from 'vue';
+import axios from 'axios';
+// import Form from './classes/Form.js';
+import _ from 'lodash';
 
-window._ = require('lodash');
+window.Vue = Vue;
+window.axios = axios;
+// window.Form = Form;
+window._ = _;
+
+window.axios.defaults.headers.common = {
+	'X-Requested-With': 'XMLHttpRequest'
+};
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -13,7 +24,6 @@ window._ = require('lodash');
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

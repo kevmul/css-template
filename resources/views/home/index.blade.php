@@ -19,24 +19,55 @@
 		</div>
 	</div>
 </div>
+
+<!--|=====================================================
+    | Typography
+    |==================================================-->
 <section class="Section">
 	<div class="Container">
 		@include('home.partials.typography')
 	</div>
 </section>
 <hr>
+<!--|=====================================================
+    | Colors
+    |==================================================-->
 <section class="Section">
 	<div class="Container">
 		@include('home.partials.colors')
 	</div>
 </section>
 <hr>
+<!--|=====================================================
+    | Grid
+    |==================================================-->
+<section class="Section">
+	<div class="Container">
+		@include('home.partials.grid')
+	</div>
+</section>
+<hr>
+<!--|=====================================================
+    | Flex Grid
+    |==================================================-->
+<section class="Section">
+	<div class="Container">
+		@include('home.partials.grid-flex')
+	</div>
+</section>
+<hr>
+<!--|=====================================================
+    | Cards
+    |==================================================-->
 <section class="Section">
 	<div class="Container">
 		@include('home.partials.cards')
 	</div>
 </section>
 <hr>
+<!--|=====================================================
+    | Alerts
+    |==================================================-->
 <section class="Section">
 	<div class="Container">
 		@include('home.partials.alerts')

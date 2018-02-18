@@ -7,12 +7,17 @@
 	<meta name="viewport" content="width=device-width initial-scale=1">
 </head>
 <body>
+<div id="app">
+	
+	<nav>@include('layout.nav')</nav>
 
-<nav>@include('layout.nav')</nav>
+	<div class="Wrapper">
+		@yield('content')
+	</div>
 
-<div class="Wrapper">
-	@yield('content')
 </div>
-
+<script src="/js/vendor.js"></script>
+<script src="/js/app.js"></script>
+@yield('footer.scripts')
 </body>
 </html>

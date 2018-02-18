@@ -2,7 +2,7 @@
 	<div class="Content">
 		<h1 class="Content__title">Colors</h1>
 	</div>
-	<div class="Grid Column-is-spaced">
+	<div class="Grid has-5-columns is-spaced">
 		<div class="Column">
 			<div class="Card">
 				<div class="Hero Hero--Large Background--Primary_Dark">
@@ -76,7 +76,7 @@
 	    | Alert Colors
 	    |======================================================-->
 	
-	<div class="Grid Column-is-spaced m-t-30">
+	<div class="Grid has-4-columns is-spaced m-t-30">
 		<div class="Column">
 			<div class="Card">
 				<div class="Hero Background--Info">
@@ -130,7 +130,11 @@
 			</div>
 		</div>
 	</div><!-- Grid -->
-	<div class="Grid Column-is-spaced m-t-30">
+	<!--|========================================================
+	    | Grays
+	    |======================================================-->
+	
+	<div class="Grid has-3-columns is-spaced m-t-30">
 		<div class="Column">
 			<div class="Card">
 				<div class="Hero Background--Dark_Gray">
