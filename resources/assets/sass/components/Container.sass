@@ -1,5 +1,15 @@
 .Container
-	max-width: $container-max-width
-	margin: 0 auto
-	padding: 0 10px
-	
+    max-width: $container-max-width
+    margin: 0 auto
+    padding: 0 $gutter
+    @if $container-reactive
+        max-width: $tablet - ($gutter * 2)
+        +breakpoint($tablet)
+            max-width: $container-max-width
+            width: $tablet - ($gutter * 2)
+        +breakpoint($tablet-portrait)
+            width: $tablet-portrait - ($gutter * 2)
+        +breakpoint($desktop)
+            width: $desktop - ($gutter * 2)
+        +breakpoint($desktopHD)
+            width: $container-max-width

@@ -3,58 +3,62 @@
 // ========================================================x
 
 // Breakpoints
-$tablet           	: 600px;
-$tablet-portrait  	: 990px;
-$desktop          	: 1300px;
-$desktopHD        	: 1800px;
+$tablet                 : 600px;
+$tablet-portrait        : 990px;
+$desktop                : 1300px;
+$desktopHD              : 1800px;
 
 $breakPoints: (
-	mobile: 0 $tablet, 
-	tablet: $tablet $tablet-portrait, 
-	tablet-portrait: $tablet-portrait $desktop, 
-	desktop: $desktop $desktopHD, 
-	desktopHD: $desktopHD 99999px
+    mobile             : 0 $tablet,
+    tablet             : $tablet $tablet-portrait,
+    tablet-portrait    : $tablet-portrait $desktop,
+    desktop            : $desktop $desktopHD,
+    desktopHD          : $desktopHD 99999px
 );
 
 // Brands
-$brand-primary: $orange;
-$brand-primary-dark: shade($brand-primary, 25%);
-$brand-primary-light: tint($brand-primary, 25%);
-$brand-secondary: $purple;
-$brand-tertiary: $dark-purple;
-$brand-info: $blue;
-$brand-success: $green;
-$brand-warning: $yellow;
-$brand-danger: $red;
+$brand-primary          : $turquoise;
+$brand-primary-dark     : shade($brand-primary, 25%);
+$brand-primary-light    : tint($brand-primary, 25%);
+$brand-secondary        : $yankee-blue;
+$brand-tertiary         : complement($brand-primary);
+$brand-info             : $blue;
+$brand-success          : $green;
+$brand-warning          : $yellow;
+$brand-danger           : $red;
 
 // Globals
-$global-radius		: 4px;
+$global-radius          : 4px;
 
 // Body
-$body-background: $white;
+$body-background        : #f5f8fa;
+
 
 // Container
-$container-max-width: 1190px;
+$container-max-width    : 1190px;
+// Reactive Container
+$container-reactive     : false; // False for responsive container
 
 // =========================================================
 // Alert
 // ========================================================
 
 $alertMap: (
-	Primary : ($brand-primary, #fff),
-	Primary_Dark : ($brand-primary-dark, #fff),
-	Primary_Light : ($brand-primary-light, #fff),
-	Secondary : ($brand-secondary, #fff),
-	Tertiary : ($brand-tertiary, #fff),
-	Error 	: ($brand-danger, #fff), 
-	Success : ($brand-success, #fff), 
-	Warning : ($brand-warning, black), 
-	Info   	: ($brand-info, #fff),
-	Dark_Gray:($dark-gray, #fff),
-	Gray 	: ($gray, #fff),
-	Light_Gray:($light-gray, #fff),
+    Primary             : ($brand-primary, #fff),
+    Primary_Dark        : ($brand-primary-dark, #fff),
+    Primary_Light       : ($brand-primary-light, #fff),
+    Secondary           : ($brand-secondary, #fff),
+    Tertiary            : ($brand-tertiary, #fff),
+    Error               : ($brand-danger, #fff),
+    Success             : ($brand-success, #fff),
+    Warning             : ($brand-warning, black),
+    Info                : ($brand-info, #fff),
+    Dark_Gray           : ($dark-gray, #fff),
+    Gray                : ($gray, #fff),
+    Light_Gray          : ($light-gray, #fff),
 );
-$alert-close-size: 20px;
+
+$alert-close-size       : 20px;
 
 //|--------------------------------------------------------
 //| Hero
@@ -64,79 +68,82 @@ $hero-background: $dark-gray;
 // =========================================================
 // Navigation
 // ========================================================
-$nav-bar-height: 60px;
-$nav-background-color: $brand-primary-dark;
-$nav-background-color-hover: $brand-primary;
-$nav-text-color: white;
-$nav-seperator-color: $brand-primary;
+
+$nav-bar-height             : 60px;
+$nav-background-color       : $brand-primary-dark;
+$nav-background-color-hover : $brand-primary;
+$nav-text-color             : white;
+$nav-seperator-color        : $brand-primary;
+
 
 // =========================================================
 // Grid
 // ========================================================
 
-$grid-columns: 12;
+$grid-columns           : 12;
+$gutter                 : 10px;
 
 // =========================================================
 // Buttons
 // ========================================================
 
 // Buttons
-$button-color		: $dark-gray;
-$button-background	: $gray;
+$button-color           : $dark-gray;
+$button-background      : $gray;
 
 // Button Map
-$buttonMap: ( 
-	Error 	: ($brand-danger, #fff), 
-	Success : ($brand-success, #fff), 
-	Warning : ($brand-warning, #000), 
-	Info 	: ($brand-info, #fff)
+$buttonMap: (
+    Error               : ($brand-danger, #fff),
+    Success             : ($brand-success, #fff),
+    Warning             : ($brand-warning, #fff),
+    Info                : ($brand-info, #fff)
 );
 
 //=========================================================
-// Typography 
+// Typography
 // ========================================================
 
-$heading-scale: 8; // amount of px headings grow from h6 to h1
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-family-serif: "", serif;
-$font-size-base: 16px;
-$line-height-base: 1.6;
-$text-color: $dark-gray;
+$heading-scale          : 8; // amount of px headings grow from h6 to h1
+$font-family-sans-serif : "Raleway", sans-serif;
+$font-family-serif      : "", serif;
+$font-size-base         : 14px;
+$line-height-base       : 1.6;
+$text-color             : $rich-black;
 
 // Block Quote
-$blockquote-background: $light-gray;
-$blockquote-color: $dark-gray;
+$blockquote-background  : $light-gray;
+$blockquote-color       : $dark-gray;
 
 // =========================================================
 // Card
 // ========================================================x
 
-$card-background: white;
-$card-border-bottom: 2px solid $brand-secondary;
-$card-border-radius: $global-radius $global-radius 0 0;
+$card-background        : white;
+$card-border-bottom     : 2px solid $brand-secondary;
+$card-border-radius     : $global-radius $global-radius 0 0;
 
 // =========================================================
-// Form 
+// Form
 // ========================================================x
 
 // Form group
-$form-group-padding: 5px 0;
-$form-group-flow: column wrap;
+$form-group-padding     : 5px 0;
+$form-group-flow        : column wrap;
 
 // Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
+$input-border           : lighten($text-color, 40%);
+$input-border-focus     : lighten($brand-primary, 25%);
 $input-color-placeholder: lighten($text-color, 30%);
-$input-padding: 10px 15px;
-$input-height: 40px;
+$input-padding          : 10px 15px;
+$input-height           : 40px;
 
 // =========================================================
-// Misc 
+// Misc
 // ========================================================x
 
 // Panels
 $panel-default-heading-bg: #fff;
 
 // Helper
-$spaceAmounts: (5,10,15,20,25,30,35,40,45,50,75,100);
-$sides: ('top','right','bottom','left');
+$spaceAmounts           : (5,10,15,20,25,30,35,40,45,50,75,100);
+$sides                  : ('top','right','bottom','left');

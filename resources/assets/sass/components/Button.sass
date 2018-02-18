@@ -1,15 +1,15 @@
 .Button
-	display: block
-	padding: 5px 10px
-	color: $button-color
-	border: none
-	background-color: $button-background
-	+noSelect()
+    display: block
+    padding: 5px 10px
+    color: $button-color
+    border: none
+    background-color: $button-background
+    +noSelect()
 
-	@each $name, $colors in $buttonMap 
-		$bgcolor: nth($colors, 1)
-		$fontcolor: nth($colors, 2)
+    @each $name, $colors in $buttonMap
+        $bgcolor: nth($colors, 1)
+        $fontcolor: nth($colors, 2)
 
-		&--#{$name} 
-			background-color: $bgcolor 
-			color: $fontcolor
+        &--#{$name}
+            background-color: $bgcolor
+            color: $fontcolor

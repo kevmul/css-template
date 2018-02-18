@@ -1,59 +1,59 @@
 .text-centered
-	text-align: center
+    text-align: center
 
 .text-shadow
-	text-shadow: 0px 1px 8px rgba(0,0,0,0.4)
+    text-shadow: 0px 1px 8px rgba(0,0,0,0.4)
 
 .is-circle
-	+border-radius(50%) 
+    +border-radius(50%)
 
 .is-active
-	display: flex
+    display: flex
 
 .is-danger
-	background-color: $brand-danger
-	color: #fff
-	
+    background-color: $brand-danger
+    color: #fff
+
 .is-success
-	background-color: $brand-success 
+    background-color: $brand-success
 
 .is-info
-	background-color: $brand-info
+    background-color: $brand-info
 
 .is-warning
-	background-color: $brand-warning 
+    background-color: $brand-warning
 
 .is-rounded
-	+border-radius($global-radius)
+    +border-radius($global-radius)
 
 .has-shadow
-	border-bottom: 1px solid rgba(0,0,0,0.2)
-	box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+    border-bottom: 1px solid rgba(0,0,0,0.2)
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2)
 
 @each $space in $spaceAmounts
-	@each $side in $sides
-		.m-#{$space}
-			margin: #{$space}px
-		.m-#{str-slice($side, 0, 1)}-#{$space}
-			margin-#{$side}: #{$space}px
-		.p-#{$space}
-			padding: #{$space}px
-		.p-#{str-slice($side, 0, 1)}-#{$space}
-			padding-#{$side}: #{$space}px
+    .m-#{$space}
+        margin: #{$space}px
+    .p-#{space}
+        padding: #{$space}px
+    @each $side in $sides
+        .m-#{str-slice($side, 0, 1)}-#{$space}
+            margin-#{$side}: #{$space}px
+        .p-#{str-slice($side, 0, 1)}-#{$space}
+            padding-#{$side}: #{$space}px
 
 @each $name, $size in $breakPoints
-  .is-visible-#{$name}
-    +breakpoint(nth($size, 1))
-      display: flex
-  
-  .is-hidden-#{$name}
-    +breakpoint(0, (nth($size, 2)-1))
-      display: none
-  
-  .is-visible-#{$name}-only
-    +breakpoint(nth($size,1), nth($size, 2)-1)
-      display: flex
-      
-  .is-hidden-#{$name}-only
-    +breakpoint(nth($size,1), (nth($size, 2)-1))
-      display: hidden
+    .is-visible-#{$name}
+        +breakpoint(nth($size, 1))
+            display: flex
+
+    .is-hidden-#{$name}
+        +breakpoint(0, (nth($size, 2)-1))
+            display: none
+
+    .is-visible-#{$name}-only
+        +breakpoint(nth($size,1), nth($size, 2)-1)
+            display: flex
+
+    .is-hidden-#{$name}-only
+        +breakpoint(nth($size,1), (nth($size, 2)-1))
+            display: hidden
