@@ -36,8 +36,12 @@ $body-background        : #f5f8fa;
 
 // Container
 $container-max-width    : 1190px;
+
 // Reactive Container
 $container-reactive     : false; // False for responsive container
+
+// Gutter
+$gutter                 : 10px;
 
 // =========================================================
 // Alert
@@ -81,7 +85,7 @@ $nav-seperator-color        : $brand-primary;
 // ========================================================
 
 $grid-columns           : 12;
-$gutter                 : 10px;
+$grid-gutter                 : .75rem;
 
 // =========================================================
 // Buttons
