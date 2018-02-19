@@ -2,7 +2,6 @@
     display: Grid
     grid-template-columns: repeat($grid-columns, 1fr)
 
-
     &.is-spaced
         grid-gap: $grid-gutter
 
@@ -11,20 +10,18 @@
             &-#{$i}-columns
                 grid-template-columns: repeat($i, 1fr)
 
-.Column-is-spaced
+
     .Column
-        margin: 0 $grid-gutter
+        grid-column: span $grid-columns
+        +breakpoint($tablet)
+            grid-column: span 1
 
-.Row
-
-.Column
-    grid-column: span 1
-    &.is-quarter
-        grid-column: span ( $grid-columns / 4 )
-    &.is-half
-        grid-column: span ( $grid-columns / 2 )
+            &.is-quarter
+                grid-column: span ( $grid-columns / 4 )
+            &.is-half
+                grid-column: span ( $grid-columns / 2 )
 
 
-    @for $i from 1 through $grid-columns
-        &.is-#{$i}-wide
-            grid-column: span #{$i}
+            @for $i from 1 through $grid-columns
+                &.is-#{$i}-wide
+                    grid-column: span #{$i}

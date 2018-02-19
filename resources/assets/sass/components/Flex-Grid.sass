@@ -1,35 +1,38 @@
 .Grid--Flex
-	display: flex
-	flex-flow: row wrap
-	margin-left: -0.75rem
-	margin-right: -0.75rem
+    display: flex
+    flex-flow: row wrap
+    +breakpoint($tablet)
 
+        &.is-spaced
+            margin-left: -$grid-gutter
+            margin-right: -$grid-gutter
+            .Column
+                margin: 0 $grid-gutter
 
-	&.is-spaced
-		.Column 
-			margin: 0 .75rem
+    .Row
 
-	.Row
+    .Column
+        flex: none
+        width: 100%
+        +breakpoint($tablet)
+            flex: 1
+            &.is-one-quarter
+                flex: none
+                width: 25%
+            &.is-one-third
+                flex: none
+                width: 33%
+            &.is-half
+                flex: none
+                width: 50%
+            &.is-two-thirds
+                flex: none
+                width: 66%
+            &.is-three-quarters
+                flex: none
+                width: 75%
 
-	.Column
-		flex: 1
-		&.is-one-third
-			flex: none
-			width: 33%
-		&.is-two-thirds
-			flex: none
-			width: 55%
-		&.is-three-quarters
-			flex: none
-			width: 75%
-		&.is-half
-			flex: none
-			width: 50%
-		&.is-one-quarter 
-			flex: none
-			width: 25%
-
-		$base : (100 / $grid-columns)
-		@for $i from 1 through $grid-columns
-			&.is-#{$i}-wide
-				flex: 0 1 ($base * $i)+%
+            $base : (100 / $grid-columns)
+            @for $i from 1 through $grid-columns
+                &.is-#{$i}-wide
+                    flex: 0 1 ($base * $i)+%

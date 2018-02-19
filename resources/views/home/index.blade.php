@@ -73,4 +73,15 @@
         @include('home.partials.alerts')
     </div>
 </section>
+<hr>
+<!--|=====================================================
+    | Breakpoints
+    |==================================================-->
+<section class="Section">
+    <div class="Container">
+        @include('home.partials.breakpoints')
+    </div>
+</section>
+
+<section class="m-b-100"></section>
 @endsection

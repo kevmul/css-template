@@ -6,18 +6,18 @@
 $tablet                 : 600px;
 $tablet-portrait        : 990px;
 $desktop                : 1300px;
-$desktopHD              : 1800px;
+$desktop-hd             : 1800px;
 
 $breakPoints: (
     mobile             : 0 $tablet,
     tablet             : $tablet $tablet-portrait,
     tablet-portrait    : $tablet-portrait $desktop,
-    desktop            : $desktop $desktopHD,
-    desktopHD          : $desktopHD 99999px
+    desktop            : $desktop $desktop-hd,
+    desktop-hd         : $desktop-hd 99999px
 );
 
 // Brands
-$brand-primary          : $turquoise;
+$brand-primary          : $orange;
 $brand-primary-dark     : shade($brand-primary, 25%);
 $brand-primary-light    : tint($brand-primary, 25%);
 $brand-secondary        : $yankee-blue;
@@ -75,7 +75,7 @@ $hero-background: $dark-gray;
 
 $nav-bar-height             : 60px;
 $nav-background-color       : $brand-primary-dark;
-$nav-background-color-hover : $brand-primary;
+$nav-background-color-hover : $brand-primary-light;
 $nav-text-color             : white;
 $nav-seperator-color        : $brand-primary;
 
