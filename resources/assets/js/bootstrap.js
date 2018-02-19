@@ -7,9 +7,14 @@ window.Vue = Vue;
 window.axios = axios;
 // window.Form = Form;
 window._ = _;
+window.Events = new Vue();
+
+window.flash = function (title ,message = null, type='success', toggle=false) {
+    window.Events.$emit('flash', title, message, type, toggle);
+}; // flash('my new flash message')
 
 window.axios.defaults.headers.common = {
-	'X-Requested-With': 'XMLHttpRequest'
+    'X-Requested-With': 'XMLHttpRequest'
 };
 
 /**
