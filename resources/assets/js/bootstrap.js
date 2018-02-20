@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import axios from 'axios';
-// import Form from './classes/Form.js';
+import Form from './classes/Form.js';
 import _ from 'lodash';
 
 window.Vue = Vue;
 window.axios = axios;
-// window.Form = Form;
+window.Form = Form;
 window._ = _;
 window.Events = new Vue();
 

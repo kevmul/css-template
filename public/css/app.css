@@ -531,6 +531,91 @@ p {
   opacity: 0;
 }
 
+.Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 5px 0;
+}
+
+.Form__group input[type=text],
+.Form__group input[type=email],
+.Form__group input[type=password],
+.Form__group select {
+  border: #2929bc;
+  padding: 10px 15px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.Form__group input[type=text]:focus,
+.Form__group input[type=email]:focus,
+.Form__group input[type=password]:focus,
+.Form__group select:focus {
+  outline: #fbce99;
+}
+
+.Form__switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+}
+
+.Form__switch input {
+  display: block;
+}
+
+.Form__switch input:checked + .Form__slider {
+  background-color: #62d5ab;
+}
+
+.Form__switch input:focus + .Form__slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.Form__switch input:checked + .Form__slider:before {
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+.Form__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.Form__slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 2px;
+}
+
 .Hero {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

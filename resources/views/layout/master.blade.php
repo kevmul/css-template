@@ -5,11 +5,12 @@
     <title>Code Template</title>
     <link rel="stylesheet" href="/css/app.css">
     <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="csrf-token" content="{{csrf_token()}}">
 </head>
 <body>
 <div id="app">
 
-    <nav>@include('layout.nav')</nav>
+    <nav id="nav">@include('layout.nav')</nav>
 
     <div class="Wrapper">
         @yield('content')
@@ -23,7 +24,7 @@
     ></alert>
 
 </div>
-<script src="/js/vendor.js"></script>
+{{-- <script src="/js/vendor.js"></script> --}}
 <script src="/js/app.js"></script>
 @yield('footer.scripts')
 </body>
