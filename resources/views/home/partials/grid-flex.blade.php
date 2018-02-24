@@ -23,4 +23,8 @@
 			@endfor
 		</div>
 	@endfor
+        <div class="Grid--Flex is-spaced m-t-20">
+            <div class="Card Column is-6-wide Background--Primary p-10">Is 6 Wide</div>
+            <div class="Card Column is-6-wide Background--Primary p-10">Is 6 Wide</div>
+        </div>
 </div>
