@@ -1,0 +1,38 @@
+.Visibility
+
+    @each $name, $size in $breakPoints
+        .is-visible-#{$name}
+            display: block
+            background: $red
+            color: white
+            +breakpoint(nth($size, 1))
+                display: block
+                background: $green
+                color: white
+
+        .is-hidden-#{$name}
+            display: block
+            background: $green
+            color: white
+            +breakpoint(0, (nth($size, 2)-1))
+                display: block
+                background: $red
+                color: white
+
+        .is-visible-#{$name}-only
+            display: block
+            background: $red
+            color: white
+            +breakpoint(nth($size,1), nth($size, 2)-1)
+                display: block
+                background: $green
+                color: white
+
+        .is-hidden-#{$name}-only
+            display: block
+            background: $green
+            color: white
+            +breakpoint(nth($size,1), (nth($size, 2)-1))
+                 display: block
+                 background: $red
+                 color: white

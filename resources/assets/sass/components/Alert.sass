@@ -2,9 +2,17 @@ $alert-close-size : 20 !default
 
 
 .Alert
-    position: relative
+    position: fixed
+    bottom: 20px
+    right: 20px
     background-color: white
+    z-index: 5
+    transition: all ease 0.5s
     +border-radius($global-radius)
+    .Content &
+        position: relative
+        bottom: 0px
+        right: 0px
 
     @each $name, $colors in $alertMap
        $bgcolor: nth($colors, 1)
@@ -37,3 +45,7 @@ $alert-close-size : 20 !default
     background-color: rgba(0,0,0,0.15)
     +border-radius(50%)
     cursor: pointer
+
+
+.hide
+    opacity: 0

@@ -5,10 +5,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
-
-window.Vue = require('vue');
-
+import './bootstrap.js';
+import Alert from './components/Alert.vue';
+import BlogForm from './components/BlogForm.js';
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -18,25 +17,30 @@ window.Vue = require('vue');
 const app = new Vue({
     el: '#app',
 
+    components: {
+        Alert,
+        BlogForm
+    },
+
     data: {
-    	displayNav: false
+        displayNav: false
     },
 
     methods: {
-    	toggleNav() {
-    		this.displayNav = !this.displayNav
-    	},
-    	showNav() {
-    		if ( window.innerWidth > 990 ) {
-    			return this.displayNav = false
-    		}
-    		return this.displayNav
-    	}
+        toggleNav() {
+            this.displayNav = !this.displayNav
+        },
+        showNav() {
+            if ( window.innerWidth > 990 ) {
+                return this.displayNav = false
+            }
+            return this.displayNav
+        }
     },
 
     computed: {
-    	width() {
-    		this.showNav();
-    	}
+        width() {
+            this.showNav();
+        }
     }
 });
