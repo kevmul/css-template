@@ -7,6 +7,7 @@
 
 import './bootstrap.js';
 import Alert from './components/Alert.vue';
+import Loader from './components/Loader.vue';
 import BlogForm from './components/BlogForm.js';
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -19,7 +20,8 @@ const app = new Vue({
 
     components: {
         Alert,
-        BlogForm
+        BlogForm,
+        Loader
     },
 
     data: {

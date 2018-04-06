@@ -14,3 +14,7 @@
 Route::get('/', 'HomeController@index');
 
 Route::resource('blog','BlogController');
+
+Route::get('loader', function(){
+    return view('tests.loader');
+});

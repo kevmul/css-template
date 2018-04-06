@@ -733,74 +733,74 @@ p {
 
   .Grid--Flex .Column.is-1-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 8.33333333%;
-            flex: 0 1 8.33333333%;
+        -ms-flex: 0 1 calc(8.33333333% - 1.5rem);
+            flex: 0 1 calc(8.33333333% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-2-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 16.66666667%;
-            flex: 0 1 16.66666667%;
+        -ms-flex: 0 1 calc(16.66666667% - 1.5rem);
+            flex: 0 1 calc(16.66666667% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-3-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%;
+        -ms-flex: 0 1 calc(25% - 1.5rem);
+            flex: 0 1 calc(25% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-4-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 33.33333333%;
-            flex: 0 1 33.33333333%;
+        -ms-flex: 0 1 calc(33.33333333% - 1.5rem);
+            flex: 0 1 calc(33.33333333% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-5-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 41.66666667%;
-            flex: 0 1 41.66666667%;
+        -ms-flex: 0 1 calc(41.66666667% - 1.5rem);
+            flex: 0 1 calc(41.66666667% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-6-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
+        -ms-flex: 0 1 calc(50% - 1.5rem);
+            flex: 0 1 calc(50% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-7-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 58.33333333%;
-            flex: 0 1 58.33333333%;
+        -ms-flex: 0 1 calc(58.33333333% - 1.5rem);
+            flex: 0 1 calc(58.33333333% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-8-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 66.66666667%;
-            flex: 0 1 66.66666667%;
+        -ms-flex: 0 1 calc(66.66666667% - 1.5rem);
+            flex: 0 1 calc(66.66666667% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-9-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 75%;
-            flex: 0 1 75%;
+        -ms-flex: 0 1 calc(75% - 1.5rem);
+            flex: 0 1 calc(75% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-10-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 83.33333333%;
-            flex: 0 1 83.33333333%;
+        -ms-flex: 0 1 calc(83.33333333% - 1.5rem);
+            flex: 0 1 calc(83.33333333% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-11-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 91.66666667%;
-            flex: 0 1 91.66666667%;
+        -ms-flex: 0 1 calc(91.66666667% - 1.5rem);
+            flex: 0 1 calc(91.66666667% - 1.5rem);
   }
 
   .Grid--Flex .Column.is-12-wide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+        -ms-flex: 0 1 calc(100% - 1.5rem);
+            flex: 0 1 calc(100% - 1.5rem);
   }
 }
 

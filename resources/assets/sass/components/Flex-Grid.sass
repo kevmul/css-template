@@ -35,4 +35,6 @@
             $base : (100 / $grid-columns)
             @for $i from 1 through $grid-columns
                 &.is-#{$i}-wide
-                    flex: 0 1 ($base * $i)+%
+                    $percent : ($base * $i) + %
+                    $gutter : ($grid-gutter * 2)
+                    flex: 0 1 calc(#{$percent} - #{$gutter})
