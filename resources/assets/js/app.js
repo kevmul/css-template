@@ -41,8 +41,8 @@ const app = new Vue({
     },
 
     computed: {
-        width() {
-            this.showNav();
-        }
+        // width() {
+        //     this.showNav();
+        // }
     }
 });

@@ -374,6 +374,55 @@ p {
   background-color: #f7921e;
 }
 
+.Hamburger {
+  position: relative;
+  display: block;
+  width: 20px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.Hamburger:hover {
+  background-color: #e38920;
+}
+
+.Hamburger span {
+  position: absolute;
+  display: block;
+  width: 16px;
+  left: calc(50% - 8px);
+  height: 1px;
+  background-color: white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.Hamburger span:nth-child(1) {
+  top: calc(50% - 6px);
+}
+
+.Hamburger span:nth-child(2) {
+  top: calc(50% - 1px);
+}
+
+.Hamburger span:nth-child(3) {
+  top: calc(50% + 4px);
+}
+
+.Hamburger.is-active span:nth-child(1) {
+  -webkit-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
+}
+
+.Hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.Hamburger.is-active span:nth-child(3) {
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+          transform: translateY(-5px) rotate(-45deg);
+}
+
 .Alert {
   position: fixed;
   bottom: 20px;
@@ -400,6 +449,10 @@ p {
   color: #fff !important;
 }
 
+.Alert--Primary span {
+  background-color: #fff !important;
+}
+
 .Alert--Primary_Dark {
   background-color: #b96e17;
   color: #fff;
@@ -407,6 +460,10 @@ p {
 
 .Alert--Primary_Dark * {
   color: #fff !important;
+}
+
+.Alert--Primary_Dark span {
+  background-color: #fff !important;
 }
 
 .Alert--Primary_Light {
@@ -418,6 +475,10 @@ p {
   color: #fff !important;
 }
 
+.Alert--Primary_Light span {
+  background-color: #fff !important;
+}
+
 .Alert--Secondary {
   background-color: #172d3a;
   color: #fff;
@@ -425,6 +486,10 @@ p {
 
 .Alert--Secondary * {
   color: #fff !important;
+}
+
+.Alert--Secondary span {
+  background-color: #fff !important;
 }
 
 .Alert--Tertiary {
@@ -436,6 +501,10 @@ p {
   color: #fff !important;
 }
 
+.Alert--Tertiary span {
+  background-color: #fff !important;
+}
+
 .Alert--Error {
   background-color: #8e1225;
   color: #fff;
@@ -443,6 +512,10 @@ p {
 
 .Alert--Error * {
   color: #fff !important;
+}
+
+.Alert--Error span {
+  background-color: #fff !important;
 }
 
 .Alert--Success {
@@ -454,6 +527,10 @@ p {
   color: #fff !important;
 }
 
+.Alert--Success span {
+  background-color: #fff !important;
+}
+
 .Alert--Warning {
   background-color: #def362;
   color: black;
@@ -461,6 +538,10 @@ p {
 
 .Alert--Warning * {
   color: black !important;
+}
+
+.Alert--Warning span {
+  background-color: black !important;
 }
 
 .Alert--Info {
@@ -472,6 +553,10 @@ p {
   color: #fff !important;
 }
 
+.Alert--Info span {
+  background-color: #fff !important;
+}
+
 .Alert--Dark_Gray {
   background-color: #3d3a3f;
   color: #fff;
@@ -479,6 +564,10 @@ p {
 
 .Alert--Dark_Gray * {
   color: #fff !important;
+}
+
+.Alert--Dark_Gray span {
+  background-color: #fff !important;
 }
 
 .Alert--Gray {
@@ -490,6 +579,10 @@ p {
   color: #fff !important;
 }
 
+.Alert--Gray span {
+  background-color: #fff !important;
+}
+
 .Alert--Light_Gray {
   background-color: #736e76;
   color: #fff;
@@ -497,6 +590,10 @@ p {
 
 .Alert--Light_Gray * {
   color: #fff !important;
+}
+
+.Alert--Light_Gray span {
+  background-color: #fff !important;
 }
 
 .Alert__content {
@@ -512,19 +609,40 @@ p {
   position: absolute;
   top: 6px;
   right: 6px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.Alert__close span {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 8px;
+  height: 1px;
+  background-color: black;
+}
+
+.Alert__close span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.Alert__close span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .hide {

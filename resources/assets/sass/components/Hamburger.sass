@@ -1,0 +1,34 @@
+$hamburger-width: 20 !default
+$hamburger-height: $hamburger-width !default
+
+
+.Hamburger
+        position: relative
+        display: block
+        width: ($hamburger-width) + px
+        margin-left: auto
+        cursor: pointer
+        &:hover
+            background-color: lighten($nav-background-color, 10%)
+        span
+            position: absolute
+            display: block
+            width: 16px
+            left: calc(50% - 8px)
+            height: 1px
+            background-color: $nav-text-color
+            transition: all .3s ease
+            &:nth-child(1)
+                top: calc(50% - 6px)
+            &:nth-child(2)
+                top: calc(50% - 1px)
+            &:nth-child(3)
+                top: calc(50% + 4px)
+        &.is-active
+            span
+                &:nth-child(1)
+                    transform: translateY(5px) rotate(45deg)
+                &:nth-child(2)
+                    opacity: 0
+                &:nth-child(3)
+                    transform: translateY(-5px) rotate(-45deg)
