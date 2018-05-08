@@ -9,11 +9,15 @@ import './bootstrap.js';
 import Alert from './components/Alert.vue';
 import Loader from './components/Loader.vue';
 import BlogForm from './components/BlogForm.js';
+import VueHighlightJS from 'vue-highlightjs';
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
+// Tell Vue.js to use vue-highlightjs
+Vue.use(VueHighlightJS);
 
 const app = new Vue({
     el: '#app',
@@ -44,5 +48,15 @@ const app = new Vue({
         // width() {
         //     this.showNav();
         // }
+    },
+
+    directives: {
+        escapeContent: {
+            bind(el) {
+                const html = el.innerHTML;
+
+                el.textContent = html;
+            }
+        }
     }
 });

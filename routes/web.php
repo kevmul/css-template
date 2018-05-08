@@ -1,5 +1,10 @@
 <?php
 
+if (!defined('DEFAULT_VERSION'))
+{
+    define('DEFAULT_VERSION', '1.0');
+}
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +23,5 @@ Route::resource('blog','BlogController');
 Route::get('loader', function(){
     return view('tests.loader');
 });
+
+Route::get('docs/{version}/{page?}', 'DocsController@show');

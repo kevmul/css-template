@@ -1,7 +1,11 @@
-.Code,
-code
-    background-color: whitesmoke
-    color: #ff3860 !important
-    font-size: 0.875em
-    font-weight: normal
-    padding: 0.25em 0.5em 0.25em
+.Code_Block
+    overflow: auto
+    code
+        line-height: 2em
+        padding: 20px 40px
+        +border-radius(4px)
+        color: white
+        *
+            font-family: 'Fira Mono', monospaced !important
+        .hljs-attr
+            color: white

@@ -26,6 +26,9 @@
 </div>
 {{-- <script src="/js/vendor.js"></script> --}}
 <script src="/js/app.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-blue.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 @yield('footer.scripts')
 </body>
 </html>
