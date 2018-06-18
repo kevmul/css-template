@@ -17,10 +17,10 @@ $breakPoints: (
 );
 
 // Brands
-$brand-primary          : $orange;
+$brand-primary          : $sangria;
 $brand-primary-dark     : shade($brand-primary, 25%);
 $brand-primary-light    : tint($brand-primary, 25%);
-$brand-secondary        : $yankee-blue;
+$brand-secondary        : $sangria;
 $brand-tertiary         : complement($brand-primary);
 $brand-info             : $blue;
 $brand-success          : $green;
@@ -35,7 +35,7 @@ $body-background        : #f5f8fa;
 
 
 // Container
-$container-max-width    : 1190px;
+$container-max-width    : 600px;
 
 // Reactive Container
 $container-reactive     : false; // False for responsive container
@@ -98,6 +98,7 @@ $button-background      : $gray;
 
 // Button Map
 $buttonMap: (
+    Primary             : ($brand-primary, #fff),
     Error               : ($brand-danger, #fff),
     Success             : ($brand-success, #fff),
     Warning             : ($brand-warning, #fff),
@@ -108,11 +109,11 @@ $buttonMap: (
 // Typography
 // ========================================================
 
-$heading-scale          : 8; // amount of px headings grow from h6 to h1
+$heading-scale          : 4; // amount of px headings grow from h6 to h1
 $font-family-sans-serif : "Raleway", sans-serif;
 $font-family-serif      : "", serif;
-$font-size-base         : 14px;
-$line-height-base       : 1.6;
+$font-size-base         : 16px;
+$line-height-base       : 1.8;
 $text-color             : $rich-black;
 
 // Block Quote
@@ -136,7 +137,7 @@ $form-group-padding     : 5px 0;
 $form-group-flow        : column wrap;
 
 // Inputs
-$input-border           : lighten($text-color, 40%);
+$input-border           : 1px solid lighten($brand-primary, 60%);
 $input-border-focus     : lighten($brand-primary, 25%);
 $input-color-placeholder: lighten($text-color, 30%);
 $input-padding          : 10px 15px;

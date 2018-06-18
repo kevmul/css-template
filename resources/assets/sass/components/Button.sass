@@ -1,9 +1,10 @@
 .Button
-    display: block
+    display: inline-block
     padding: 5px 10px
     color: $button-color
     border: none
     background-color: $button-background
+    cursor: pointer
     +noSelect()
 
     @each $name, $colors in $buttonMap

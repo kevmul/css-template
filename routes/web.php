@@ -1,10 +1,6 @@
 <?php
 
-if (!defined('DEFAULT_VERSION'))
-{
-    define('DEFAULT_VERSION', '1.0');
-}
-
+use Carbon\Carbon;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,8 +11,16 @@ if (!defined('DEFAULT_VERSION'))
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function() {
+    $today = Carbon::today();
+    $future = Carbon::today()->addWeeks(4)->toDateString();
+    return view('temp.opA', compact('today', 'future'));
+});
+Route::get('optb', function() {
+    return view('temp.optB', compact('times'));
+});
 
-Route::get('/', 'HomeController@index');
+// Route::get('/', 'HomeController@index');
 
 Route::resource('blog','BlogController');
 

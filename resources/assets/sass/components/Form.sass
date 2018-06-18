@@ -2,6 +2,7 @@ $form_switch--Height: 20px !default
 $form_switch--Width: 60px !default
 .Form
     display: flex
+    flex-direction: column
 
 .Form__group
     display: flex
@@ -10,9 +11,10 @@ $form_switch--Width: 60px !default
 
     input[type=text],
     input[type=email],
+    input[type=date],
     input[type=password],
     select
-        border: $input-border
+        border: $input-border !important
         padding: $input-padding
         height: $input-height
 
@@ -56,3 +58,67 @@ $form_switch--Width: 60px !default
         background-color: white
         transition: .4s
         +border-radius(2px)
+
+.Range
+    appearance: none
+    display: block
+    height: 15px
+    width: 100%
+    background: #d3d3d3
+    outline: none
+
+    &::-webkit-slider-thumb
+        appearance: none
+        -moz-appearance: none
+        width: 54px
+        height: 25px
+        background: hsl(140, 50%, 70%)
+        cursor: pointer
+        border: none
+        position: relative
+        +border-radius(0)
+        &:after
+            content: '< >'
+            text-align: center
+            background: yellow
+            color: white
+            width: 54px
+            height: 25px
+            position: absolute
+            top: 0px
+            left: 0
+
+
+    &::-moz-range-thumb
+        appearance: none
+        -moz-appearance: none
+        width: 54px
+        height: 25px
+        background: hsl(140, 50%, 70%)
+        cursor: pointer
+        border: none
+        position: relative
+        +border-radius(0)
+        &:after
+            content: '< >'
+            text-align: center
+            background: yellow
+            color: white
+            width: 54px
+            height: 25px
+            position: absolute
+            top: 0px
+            left: 0
+.Range__current
+    width: 54px
+    height: 30px
+    overflow: hidden
+    &--Reel
+        background: linear-gradient(hsl(0, 80%, 70%), hsl(120, 80%, 70%))
+        span
+            display: flex
+            justify-content: center
+            align-items: center
+            text-align: center
+            height: 30px
+            color: white
