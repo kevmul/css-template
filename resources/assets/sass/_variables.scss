@@ -20,7 +20,7 @@ $breakPoints: (
 $brand-primary          : $sangria;
 $brand-primary-dark     : shade($brand-primary, 25%);
 $brand-primary-light    : tint($brand-primary, 25%);
-$brand-secondary        : $sangria;
+$brand-secondary        : $dark-coral;
 $brand-tertiary         : complement($brand-primary);
 $brand-info             : $blue;
 $brand-success          : $green;
@@ -35,7 +35,7 @@ $body-background        : #f5f8fa;
 
 
 // Container
-$container-max-width    : 600px;
+$container-max-width    : 900px;
 
 // Reactive Container
 $container-reactive     : false; // False for responsive container

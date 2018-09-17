@@ -1,5 +1,12 @@
-$form_switch--Height: 20px !default
-$form_switch--Width: 60px !default
+$form-group-flow: !default
+$form-group-padding: !default
+$input-border           : 1px solid lighten($brand-primary, 60%) !default
+$input-border-focus     : lighten($brand-primary, 25%) !default
+$input-color-placeholder: lighten($text-color, 30%) !default
+$input-padding          : 10px 15px !default
+$input-height           : 40px !default
+//|--------------------------------------------------------
+
 .Form
     display: flex
     flex-direction: column
@@ -17,108 +24,6 @@ $form_switch--Width: 60px !default
         border: $input-border !important
         padding: $input-padding
         height: $input-height
-
         +border-radius($global-radius)
         &:focus
             outline: $input-border-focus
-
-
-
-.Form__switch
-    position: relative
-    display: inline-block
-    width: $form_switch--Width
-    height: $form_switch--Height
-    input
-        display: block
-        &:checked + .Form__slider
-            background-color: $turquoise
-        &:focus + .Form__slider
-            box-shadow: 0 0 1px #2196F3
-        &:checked + .Form__slider:before
-            transform: translateX($form_switch--Width - $form_switch--Height )
-
-.Form__slider
-    position: absolute
-    cursor: pointer
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    background-color: #ccc
-    +transition(.4s)
-    +border-radius(4px)
-    &:before
-        position: absolute
-        content: ""
-        height: $form_switch--Height - 8
-        width: $form_switch--Height - 8
-        left: 4px
-        bottom: 4px
-        background-color: white
-        transition: .4s
-        +border-radius(2px)
-
-.Range
-    appearance: none
-    display: block
-    height: 15px
-    width: 100%
-    background: #d3d3d3
-    outline: none
-
-    &::-webkit-slider-thumb
-        appearance: none
-        -moz-appearance: none
-        width: 54px
-        height: 25px
-        background: hsl(140, 50%, 70%)
-        cursor: pointer
-        border: none
-        position: relative
-        +border-radius(0)
-        &:after
-            content: '< >'
-            text-align: center
-            background: yellow
-            color: white
-            width: 54px
-            height: 25px
-            position: absolute
-            top: 0px
-            left: 0
-
-
-    &::-moz-range-thumb
-        appearance: none
-        -moz-appearance: none
-        width: 54px
-        height: 25px
-        background: hsl(140, 50%, 70%)
-        cursor: pointer
-        border: none
-        position: relative
-        +border-radius(0)
-        &:after
-            content: '< >'
-            text-align: center
-            background: yellow
-            color: white
-            width: 54px
-            height: 25px
-            position: absolute
-            top: 0px
-            left: 0
-.Range__current
-    width: 54px
-    height: 30px
-    overflow: hidden
-    &--Reel
-        background: linear-gradient(hsl(0, 80%, 70%), hsl(120, 80%, 70%))
-        span
-            display: flex
-            justify-content: center
-            align-items: center
-            text-align: center
-            height: 30px
-            color: white

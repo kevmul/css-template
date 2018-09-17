@@ -803,11 +803,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // Tell Vue.js to use vue-highlightjs
 
 var app = new Vue({
-    el: '#app',
+  el: '#app',
 
-    components: {
-        RangeSlider: __WEBPACK_IMPORTED_MODULE_1__components_RangeSlider_vue___default.a
-    }
+  components: {
+    RangeSlider: __WEBPACK_IMPORTED_MODULE_1__components_RangeSlider_vue___default.a
+  }
 });
 
 /***/ }),
@@ -29371,7 +29371,7 @@ var Component = __webpack_require__(37)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "C:\\websites\\__Sandbox__\\Code_Template\\resources\\assets\\js\\components\\RangeSlider.vue"
+Component.options.__file = "J:\\wamp64\\www\\CodeTemplate\\resources\\assets\\js\\components\\RangeSlider.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] RangeSlider.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -29382,9 +29382,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7682c87a", Component.options)
+    hotAPI.createRecord("data-v-9402015a", Component.options)
   } else {
-    hotAPI.reload("data-v-7682c87a", Component.options)
+    hotAPI.reload("data-v-9402015a", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -29592,7 +29592,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7682c87a", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-9402015a", module.exports)
   }
 }
 
