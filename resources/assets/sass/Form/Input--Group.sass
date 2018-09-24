@@ -1,0 +1,10 @@
+$input-radius: 8px
+.Input__group
+    display: flex
+    >input
+        +border-radius-separate($input-radius, 0 !important, $input-radius, 0 !important)
+    &--Append
+        margin-left: -1px
+        display: flex
+        >*
+            +border-radius-separate(0 !important, $input-radius, 0 !important, $input-radius)
