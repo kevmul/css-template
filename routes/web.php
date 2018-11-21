@@ -28,4 +28,8 @@ Route::get('loader', function(){
     return view('tests.loader');
 });
 
+// HON Lookup
+Route::get('lookup', 'HonLookupController@index');
+Route::get('/ajax__broker-lookup', 'HonLookupController@getData');
+
 Route::get('docs/{version}/{page?}', 'DocsController@show');
