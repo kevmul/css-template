@@ -9,11 +9,11 @@ $desktop                : 1300px;
 $desktop-hd             : 1800px;
 
 $breakPoints: (
-    mobile             : 0 $tablet,
-    tablet             : $tablet $tablet-portrait,
-    tablet-portrait    : $tablet-portrait $desktop,
-    desktop            : $desktop $desktop-hd,
-    desktop-hd         : $desktop-hd 99999px
+    xs             : 0 $tablet,
+    sm             : $tablet $tablet-portrait,
+    md             : $tablet-portrait $desktop,
+    lg             : $desktop $desktop-hd,
+    xl             : $desktop-hd 99999px
 );
 
 // Brands
@@ -87,6 +87,12 @@ $nav-seperator-color        : $brand-primary;
 
 $grid-columns           : 12;
 $grid-gutter                 : .75rem;
+$grid_arr: (
+    (sm, $tablet),
+    (md, $tablet-portrait),
+    (lg, $desktop),
+    (xl, $desktop-hd)
+);
 
 // =========================================================
 // Buttons
@@ -95,6 +101,9 @@ $grid-gutter                 : .75rem;
 // Buttons
 $button-color           : $dark-gray;
 $button-background      : $gray;
+
+// Spinner
+$spinner-size           : 2;
 
 // Button Map
 $buttonMap: (

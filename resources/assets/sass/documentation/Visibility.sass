@@ -1,6 +1,6 @@
 .Visibility
     @each $name, $size in $breakPoints
-        .is-visible-#{$name}
+        .#{$name}\:is-visible
             display: block
             background: $red
             color: white
@@ -9,7 +9,7 @@
                 background: $green
                 color: white
 
-        .is-hidden-#{$name}
+        .#{$name}\:is-hidden
             display: block
             background: $green
             color: white
@@ -18,7 +18,7 @@
                 background: $red
                 color: white
 
-        .is-visible-#{$name}-only
+        .#{$name}\:is-visible-only
             display: block
             background: $red
             color: white
@@ -27,7 +27,7 @@
                 background: $green
                 color: white
 
-        .is-hidden-#{$name}-only
+        .#{$name}\:is-hidden-only
             display: block
             background: $green
             color: white

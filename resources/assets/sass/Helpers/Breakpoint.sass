@@ -1,16 +1,16 @@
 @each $name, $size in $breakPoints
-    .is-visible-#{$name}
+    .#{$name}\:is-visible
         +breakpoint(nth($size, 1))
             display: flex
 
-    .is-hidden-#{$name}
+    .#{$name}\:is-hidden
         +breakpoint(0, (nth($size, 2)-1))
             display: none
 
-    .is-visible-#{$name}-only
+    .#{$name}\:is-visible-only
         +breakpoint(nth($size,1), nth($size, 2)-1)
             display: flex
 
-    .is-hidden-#{$name}-only
+    .#{$name}\:is-hidden-only
         +breakpoint(nth($size,1), (nth($size, 2)-1))
-            display: hidden
+            display: none

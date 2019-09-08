@@ -15,7 +15,7 @@
         </code>
     </pre>
 
-    <h2 class="m-t-40">Grid-spaced</h2>
+    <h2 class="m-t-40">Grid.is-spaced</h2>
     <div class="Grid is-spaced m-t-20">
         @for($i=1;$i<=12;$i++)
             <div class="Card Column p-10">{{$i}}</div>
@@ -54,11 +54,12 @@
     </pre>
 
     <h2 class="m-t-40">Customize number of Columns in a Grid</h2>
-    <div class="Grid is-spaced has-4-columns m-t-20">
+    <h4>Grid.has-4-columns.is-spaced</h4>
+    <div class="Grid has-4-columns is-spaced m-t-20">
         @for($i=1;$i<=4;$i++)
             <div class="Card Column p-10">{{$i}}</div>
         @endfor
-        <div class="Card Column is-3-wide">Is 3 Wide</div>
+        <div class="Card Column is-3-wide p-10">Is 3 Wide</div>
     </div>
 
     {{-- Code --}}
@@ -71,4 +72,28 @@
 </div>
         </code>
     </pre>
+
+    <h2 class="m-t-40">Responsive Columns in a Grid</h2>
+    <div class="Grid is-spaced">
+        <div class="Card Column is-3-wide md:is-9-wide lg:is-6-wide xl:is-2-wide p-10">
+            Responsive <br>
+            <code>
+                is-3-wide
+                md:is-9-wide
+                lg:is-6-wide
+                xl:is-2-wide
+            </code>
+        </div>
+    </div>
+    <div class="Grid is-spaced m-t-20">
+        <div class="Card Column is-6-wide md:is-4-wide sm:is-offset-2 md:is-offset-4 lg:is-offset-6 xl:is-offset-8 p-10">
+            Responsive <br>
+            <code>
+                is-3-wide
+                is-w-wide.sm:is-offset-2.md:is-offset-4.lg:is-offset-6.xl:is-offset-8
+            </code>
+        </div>
+    </div>
+
 </div><!-- Content -->
+

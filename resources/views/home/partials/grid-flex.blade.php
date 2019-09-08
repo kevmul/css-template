@@ -6,7 +6,7 @@
         @endfor
     </div>
 
-    <h2 class="m-t-40">Grid-spaced</h2>
+    <h2 class="m-t-40">Grid--Flex.is-spaced</h2>
     <div class="Grid--Flex is-spaced m-t-20">
         @for($i=1;$i<=12;$i++)
             <div class="Card Column p-10">{{$i}}</div>
@@ -24,6 +24,7 @@
         </div>
     @endfor
     <h5 class="m-t-40">Careful when creating layouts with Flex</h5>
+
     <h6>Don't use</h6>
     <div class="Grid--Flex is-spaced m-t-20">
         <div class="Card Column is-6-wide Background--Primary p-10">Is 6 Wide</div>

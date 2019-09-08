@@ -22,18 +22,31 @@
                 grid-column: span ( $grid-columns / 2 )
 
 
-        @for $i from 1 through $grid-columns - 1
+        @for $i from 1 through $grid-columns
             &.is-#{$i}-wide
                 grid-column-start: span #{$i}
             @for $y from 1 through $grid-columns - 1
                 &.is-#{$i}-wide.is-offset-#{$y}
                     grid-column: ($y + 1) / span #{$i};
 
+        @for $i from 1 through $grid-columns - 1
+            &.is-#{$i}-wide
+                grid-column-start: span #{$i}
+            @each $label, $breakpoint in $grid_arr
+                @media only screen and (min-width: #{$breakpoint})
+                    @for $y from 1 through $grid-columns - 1
+                        &.is-#{$i}-wide.#{$label}\:is-offset-#{$y}
+                            grid-column: ($y + 1) / span #{$i}
+
+
+
         @each $label, $breakpoint in $grid_arr
             @media only screen and (min-width: #{$breakpoint})
                 @for $i from 1 through $grid-columns - 1
-                    &.is-#{$i}-wide-#{$label}
+                    &.#{$label}\:is-#{$i}-wide
                         grid-column-start: span #{$i}
-                    @for $y from 1 through $grid-columns - 1
-                        &.is-#{$i}-wide-#{$label}.is-offset-#{$y}-#{$label}
-                            grid-column: ($y + 1) / span #{$i}
+                    @each $label2, $breakpoint2 in $grid_arr
+                        @media only screen and (min-width: #{$breakpoint2})
+                            @for $y from 1 through $grid-columns - 1
+                                &.#{$label}\:is-#{$i}-wide.#{$label2}\:is-offset-#{$y}
+                                    grid-column: ($y + 1) / span #{$i}

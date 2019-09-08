@@ -59,136 +59,136 @@
     <h4>( resize screen to see what breakpoints get hidden )</h4>
     {{-- Mobile --}}
     <div class="Grid is-spaced has-4-columns Visibility">
-        <div class="Card Hero is-visible-mobile">
+        <div class="Card Hero xs:is-visible">
             <div class="Hero__body">
                 <p>Mobile</p>
-                <p><code>.is-visible-mobile</code></p>
+                <p><code>.xs:is-visible</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-mobile">
+        <div class="Card Hero xs:is-hidden">
             <div class="Hero__body">
                 <p>Mobile Hidden</p>
-                <p><code>.is-hidden-mobile</code></p>
+                <p><code>.xs:is-hidden</code></p>
             </div>
         </div>
-        <div class="Card Hero is-visible-mobile-only">
+        <div class="Card Hero xs:is-visible-only">
             <div class="Hero__body">
                 <p>Mobile visible only</p>
-                <p><code>.is-visible-mobile-only</code></p>
+                <p><code>.xs:is-visible-only</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-mobile-only">
+        <div class="Card Hero xs:is-hidden-only">
             <div class="Hero__body">
                 <p>Mobile hidden only</p>
-                <p><code>.is-hidden-mobile-only</code></p>
+                <p><code>.xs:is-hidden-only</code></p>
             </div>
         </div>
     </div>
     {{-- Tablet --}}
     <div class="Grid is-spaced has-4-columns Visibility">
-        <div class="Card Hero is-visible-tablet">
+        <div class="Card Hero sm:is-visible">
             <div class="Hero__body">
                 <p>tablet</p>
-                <p><code>.is-visible-tablet</code></p>
+                <p><code>.sm:is-visible</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-tablet">
+        <div class="Card Hero sm:is-hidden">
             <div class="Hero__body">
                 <p>tablet Hidden</p>
-                <p><code>.is-hidden-tablet</code></p>
+                <p><code>.sm:is-hidden</code></p>
             </div>
         </div>
-        <div class="Card Hero is-visible-tablet-only">
+        <div class="Card Hero sm:is-visible-only">
             <div class="Hero__body">
                 <p>tablet visible only</p>
-                <p><code>.is-visible-tablet-only</code></p>
+                <p><code>.sm:is-visible-only</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-tablet-only">
+        <div class="Card Hero sm:is-hidden-only">
             <div class="Hero__body">
                 <p>tablet hidden only</p>
-                <p><code>.is-hidden-tablet-only</code></p>
+                <p><code>.sm:is-hidden-only</code></p>
             </div>
         </div>
     </div>
     {{-- Tablet Portrait--}}
     <div class="Grid is-spaced has-4-columns Visibility">
-        <div class="Card Hero is-visible-tablet-portrait">
+        <div class="Card Hero md:is-visible">
             <div class="Hero__body">
                 <p>tablet-portrait</p>
-                <p><code>.is-visible-tablet-portrait</code></p>
+                <p><code>.md:is-visible</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-tablet-portrait">
+        <div class="Card Hero md:is-hidden">
             <div class="Hero__body">
                 <p>tablet-portrait Hidden</p>
-                <p><code>.is-hidden-tablet-portrait</code></p>
+                <p><code>.md:is-hidden</code></p>
             </div>
         </div>
-        <div class="Card Hero is-visible-tablet-portrait-only">
+        <div class="Card Hero md:is-visible-only">
             <div class="Hero__body">
                 <p>tablet-portrait visible only</p>
-                <p><code>.is-visible-tablet-portrait-only</code></p>
+                <p><code>.md:is-visible-only</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-tablet-portrait-only">
+        <div class="Card Hero md:is-hidden-only">
             <div class="Hero__body">
                 <p>tablet-portrait hidden only</p>
-                <p><code>.is-hidden-tablet-portrait-only</code></p>
+                <p><code>.md:is-hidden-only</code></p>
             </div>
         </div>
     </div>
     {{-- Desktop --}}
     <div class="Grid is-spaced has-4-columns Visibility">
-        <div class="Card Hero is-visible-desktop">
+        <div class="Card Hero lg:is-visible">
             <div class="Hero__body">
                 <p>desktop</p>
-                <p><code>.is-visible-desktop</code></p>
+                <p><code>.lg:is-visible</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-desktop">
+        <div class="Card Hero lg:is-hidden">
             <div class="Hero__body">
                 <p>desktop Hidden</p>
-                <p><code>.is-hidden-desktop</code></p>
+                <p><code>.lg:is-hidden</code></p>
             </div>
         </div>
-        <div class="Card Hero is-visible-desktop-only">
+        <div class="Card Hero lg:is-visible-only">
             <div class="Hero__body">
                 <p>desktop visible only</p>
-                <p><code>.is-visible-desktop-only</code></p>
+                <p><code>.lg:is-visible-only</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-desktop-only">
+        <div class="Card Hero lg:is-hidden-only">
             <div class="Hero__body">
                 <p>desktop hidden only</p>
-                <p><code>.is-hidden-desktop-only</code></p>
+                <p><code>.lg:is-hidden-only</code></p>
             </div>
         </div>
     </div>
     {{-- Desktop HD --}}
     <div class="Grid is-spaced has-4-columns Visibility">
-        <div class="Card Hero is-visible-desktop-hd">
+        <div class="Card Hero xl:is-visible">
             <div class="Hero__body">
                 <p>desktop-hd</p>
-                <p><code>.is-visible-desktop-hd</code></p>
+                <p><code>.xl:is-visible</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-desktop-hd">
+        <div class="Card Hero sm:is-visible xl:is-hidden">
             <div class="Hero__body">
                 <p>desktop-hd Hidden</p>
-                <p><code>.is-hidden-desktop-hd</code></p>
+                <p><code>.xl:is-hidden</code></p>
             </div>
         </div>
-        <div class="Card Hero is-visible-desktop-hd-only">
+        <div class="Card Hero xl:is-visible-only">
             <div class="Hero__body">
                 <p>desktop-hd visible only</p>
-                <p><code>.is-visible-desktop-hd-only</code></p>
+                <p><code>.xl:is-visible-only</code></p>
             </div>
         </div>
-        <div class="Card Hero is-hidden-desktop-hd-only">
+        <div class="Card Hero xl:is-hidden-only">
             <div class="Hero__body">
                 <p>desktop-hd hidden only</p>
-                <p><code>.is-hidden-desktop-hd-only</code></p>
+                <p><code>.xl:is-hidden-only</code></p>
             </div>
         </div>
     </div>
