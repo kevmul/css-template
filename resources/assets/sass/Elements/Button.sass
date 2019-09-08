@@ -1,11 +1,25 @@
+$spinner-size: 2 !default
+
 .Button
     display: inline-block
+    position: relative
     padding: 5px 10px
     color: $button-color
     border: none
+    // font-weight: bold
+    // text-transform: uppercase
+    letter-spacing: .05em
     background-color: $button-background
     cursor: pointer
     +noSelect()
+
+    &.is-small
+        font-size: 0.875rem
+        padding: 3px 7px
+
+    &.is-large
+        font-size: 1.375rem
+        padding: 7px 14px
 
     @each $name, $colors in $buttonMap
         $bgcolor: nth($colors, 1)
@@ -14,3 +28,35 @@
         &--#{$name}
             background-color: $bgcolor
             color: $fontcolor
+            border: 1px solid $bgcolor
+
+            &:hover
+                background-color: darken($bgcolor, 10%)
+
+            &.is-outlined
+                background-color: transparent
+                border: 1px solid $bgcolor
+                color: $bgcolor
+                &:hover
+                    box-shadow: 0 0 2px inset lighten($bgcolor, 10%)
+
+    &.is-loading
+        color: transparent !important
+        pointer-events: none
+        &::after
+            content: ""
+            width: $spinner-size+em
+            height: $spinner-size+em
+            display: block
+            border: 2px solid white
+            border-left-color: transparent
+            border-bottom-color: transparent
+            +border-radius(50%)
+            animation: spin 1s linear infinite
+            position: absolute
+            left: calc(50% - #{$spinner-size/2}em)
+            top: calc(50% - #{$spinner-size/2}em)
+
+    &[disabled]
+        opacity: 0.5
+        cursor: not-allowed
