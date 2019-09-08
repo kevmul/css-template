@@ -17,7 +17,7 @@
 
                 <h6>When is the best time for us to connect?</h6>
                 <form action="POST" class="Form">
-                    <div class="is-flex flex-row">
+                    <div class="d-flex flex-row">
 
                     <div class="Form__group m-r-10">
                         <label for="date" class="Form__label">Date</label>

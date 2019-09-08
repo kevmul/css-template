@@ -1,6 +1,6 @@
 <div class="Navigation Nav--Floating_Links">
     <div class="Container">
-        <div class="is-flex flex-full has-space-between">
+        <div class="d-flex flex has-space-between">
             <ul class="Nav__list">
                 <li class="Nav__item"><a href="#">Home</a></li>
             </ul>

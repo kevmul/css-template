@@ -1,8 +1,8 @@
 @extends('layout.master')
 
 @section('content')
-<div class="Hero Hero--Extra_Large Background--Primary">
-    <div class="Container">
+<div class="Hero Hero--Large Background--Primary d-flex flex-row align-center">
+    <div class="Container flex">
         <div class="Hero__body Content">
             <h1>Kevin's Code Template</h1>
             <h3>Hero</h3>
@@ -28,7 +28,19 @@
         @include('home.partials.typography')
     </div>
 </section>
+
+<!--|=====================================================
+    | Typography columns
+    |==================================================-->
+
+<section class="Section">
+    <div class="Container">
+        @include('home.partials.text-column')
+    </div>
+</section>
+
 <hr>
+
 <!--|=====================================================
     | Colors
     |==================================================-->
