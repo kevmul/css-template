@@ -214,7 +214,7 @@
 =m($modifier)
   @at-root #{&}--#{$modifier}
     @content
-    
+
 @function tint($color, $percentage)
   @return mix(white, $color, $percentage)
 
@@ -231,13 +231,13 @@
   @else
     @return lighten($original, 30%)
 
-=font-size($size) 
+=font-size($size)
   $remValue: $size / 16
   $pxValue: ($size)
   font-size: $pxValue + px
   font-size: $remValue + rem
 
-=line-height($size) 
+=line-height($size)
   $remValue: $size / 16
   $pxValue: ($size)
   line-height: $pxValue + px
@@ -248,9 +248,9 @@
   +css3-prefix("user-select", "none")
 
 =breakpoint($from, $to:null)
-  @if $to == null 
-    @media only screen and (min-width: $from)
+  @if $to == null
+    @media (min-width: $from)
       @content
-  @else 
-    @media only screen and (min-width: $from) and (max-width: $to)
+  @else
+    @media (min-width: $from) and (max-width: $to)
       @content
