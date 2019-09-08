@@ -7,7 +7,7 @@
 
 import './bootstrap.js';
 // import RangeSlider from './components/RangeSlider.vue';
-import HonBrokerLookup from './components/HonBrokerLookup.vue';
+// import HonBrokerLookup from './components/HonBrokerLookup.vue';
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -20,6 +20,6 @@ const app = new Vue({
     el: '#app',
 
     components: {
-        HonBrokerLookup
+        // HonBrokerLookup
     }
 });
