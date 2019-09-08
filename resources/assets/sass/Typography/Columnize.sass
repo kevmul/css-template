@@ -1,0 +1,7 @@
+@each $label, $size in $breakPoints
+    +breakpoint(nth($size, 1), nth($size, 2))
+        .#{$label}\:has
+            @for $i from 1 through 4
+                &-#{$i}-columns
+                        column-count: #{$i}
+
